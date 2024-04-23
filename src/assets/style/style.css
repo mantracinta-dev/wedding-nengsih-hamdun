@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700;900&family=Poppins:wght@100;300;400;500;700;900&family=Sacramento&display=swap");
+/* width */
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 5px solid transparent;
+  background-clip: content-box;
+  background-color: rgb(182, 100, 114);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(243, 102, 125);
+  background-clip: content-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Nunito", sans-serif;
+}
+
+.wrapper {
+  max-width: 425px;
+  margin: auto;
+  background-image: url(../img/dark_exa.webp);
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.font__title {
+  font-family: "Poppins", sans-serif !important;
+  letter-spacing: 1px;
+}
+.font__subtitle {
+  font-family: "Nunito", sans-serif !important;
+  letter-spacing: 1px;
+}
+.font__cursive {
+  font-family: "Sacramento", cursive !important;
+  letter-spacing: 1px;
+}
+
+.color__pink {
+  color: #d7ae11 !important;
+}
+.color__pink-bg {
+  background-color: #d7ae11 !important;
+}
+.color__yellow {
+  color: #d7ae11 !important;
+}
+.color__yellow-bg {
+  background-color: #d7ae11 !important;
+}
+.color__dark {
+  color: #523c52 !important;
+}
+.color__dark-bg {
+  background-color: #523c52 !important;
+}
+
+.btn-floating {
+  position: fixed;
+  margin: auto;
+  bottom: 90px;
+  z-index: 1;
+}
+.btn-floating__left {
+  position: fixed;
+  left: 5px;
+}
+.btn-floating__rotate {
+  animation-name: ringing;
+  animation-duration: 10s;
+  animation-delay: 0.5s;
+  transform: rotate(20deg);
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.btn-floating__right {
+  position: fixed;
+  right: 5px;
+}
+@keyframes ringing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bg-greeting {
+  background-image: url(../img/bg-dark.webp);
+  background-repeat: repeat;
+  background-position: center;
+}
+.bg-card {
+  background-image: radial-gradient(white, transparent), url(../img/bg-regal.png);
+  background-repeat: repeat;
+  background-position: center;
+}
+.bg-cover {
+  background-image: linear-gradient(rgba(13, 110, 255, 0), #000000), url(../img/gallery/img1673.png);
+  background-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: contain;
+  position: relative;
+}
+.bg-menu {
+  background-image: url(../img/darth_stripe.png);
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.navbar--top {
+  position: fixed;
+  padding: 5px;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.navbar--bottom {
+  position: fixed;
+  padding: 5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.navbar .left {
+  transform: rotate(269deg);
+}
+.navbar .left-bottom {
+  transform: rotate(180deg);
+}
+.navbar .right-bottom {
+  transform: rotate(90deg);
+}
+
+.card-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 9rem;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700;900&family=Poppins:wght@100;300;400;500;700;900&family=Sacramento&display=swap");
+@import "scroll";
+
+$font-title-family: "Poppins", sans-serif;
+$font-body-family: "Nunito", sans-serif;
+$font-sambung-family: "Sacramento", cursive;
+
+$color-primary: #d7ae11;
+$color-secondary: #d7ae11;
+$color-dark: #523c52;
+$color-bg: #fcf3ec;
+
+$color-scroll: rgb(236, 216, 153);
+$color-scroll-hover: rgb(222 209 170);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: $font-body-family;
+}
+
+.wrapper {
+  max-width: 425px;
+  margin: auto;
+  background-image: url(../img/dark_exa.webp);
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.font {
+  &__title {
+    font-family: $font-title-family !important;
+    letter-spacing: 1px;
+  }
+  &__subtitle {
+    font-family: $font-body-family !important;
+    letter-spacing: 1px;
+  }
+  &__cursive {
+    font-family: $font-sambung-family !important;
+    letter-spacing: 1px;
+  }
+}
+
+.color {
+  &__pink {
+    color: $color-primary !important;
+    &-bg {
+      background-color: $color-primary !important;
+    }
+  }
+  &__yellow {
+    color: $color-secondary !important;
+    &-bg {
+      background-color: $color-secondary !important;
+    }
+  }
+  &__dark {
+    color: $color-dark !important;
+    &-bg {
+      background-color: $color-dark !important;
+    }
+  }
+}
+
+.btn-floating {
+  position: fixed;
+  margin: auto;
+  bottom: 90px;
+  z-index: 1;
+  &__left {
+    position: fixed;
+    left: 5px;
+  }
+  &__rotate {
+    animation-name: ringing;
+    animation-duration: 10s;
+    animation-delay: 0.5s;
+    transform: rotate(20deg);
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+  &__right {
+    position: fixed;
+    right: 5px;
+  }
+
+  @keyframes ringing {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.bg {
+  &-greeting {
+    background-image: url(../img/bg-dark.webp);
+    background-repeat: repeat;
+    background-position: center;
+  }
+  &-card {
+    background-image: radial-gradient(white, transparent), url(../img/bg-regal.png);
+    background-repeat: repeat;
+    background-position: center;
+  }
+  &-cover {
+    background-image: linear-gradient(#0d6eff00, #000000), url(../img/gallery/img1673.png);
+    background-position: top;
+    object-fit: cover;
+    background-size: contain;
+    position: relative;
+  }
+  &-menu {
+    background-image: url(../img/darth_stripe.png);
+    background-repeat: repeat;
+    background-position: center;
+  }
+}
+
+.navbar {
+  &--top {
+    position: fixed;
+    padding: 5px;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+  &--bottom {
+    position: fixed;
+    padding: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .left {
+    transform: rotate(269deg);
+  }
+
+  .left-bottom {
+    transform: rotate(180deg);
+  }
+  .right-bottom {
+    transform: rotate(90deg);
+  }
+}
+
+.card {
+  &-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 9rem;
+  }
+}
