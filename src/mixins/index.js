@@ -28,13 +28,16 @@ export default {
           img: require("../assets/img/bank-bri.png"),
           name: "Putri Nengsih",
           norek: 386801047604531,
+          bank: "BRI",
         },
         {
           img: require("../assets/img/bank-bsi.png"),
           name: "Hamdun",
           norek: 7102583300,
+          bank: "BSI",
         },
       ],
+      dateInitial: "PH",
     };
   },
 };

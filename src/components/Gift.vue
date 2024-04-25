@@ -31,7 +31,8 @@
               class="mt-2 color__yellow-bg"
               @click="copyNumberBank(card.norek)"
             >
-              <v-icon left dark> mdi mdi-content-copy </v-icon> Copy No Rek BCA
+              <v-icon left dark> mdi mdi-content-copy </v-icon> Copy No Rek
+              {{ card.bank }}
             </v-btn>
           </div>
         </div>
@@ -70,7 +71,7 @@
             data-aos-duration="1500"
             class="font__title font-bold text-5xl color__pink"
           >
-            PH
+            {{ dateInitial }}
           </p>
         </div>
         <p class="text-sm">
