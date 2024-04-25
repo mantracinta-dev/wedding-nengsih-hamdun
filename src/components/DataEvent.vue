@@ -34,7 +34,7 @@
 export default {
   methods: {
     openMap() {
-      window.open('https://maps.app.goo.gl/YPRXgDircG9xKW8m8', '_blank')
+      window.open('https://maps.app.goo.gl/gdddHTQq2S4aK9jSA', '_blank')
     }
   }
 }

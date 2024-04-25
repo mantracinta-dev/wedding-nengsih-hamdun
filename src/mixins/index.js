@@ -38,6 +38,7 @@ export default {
         },
       ],
       dateInitial: "PH",
+      googleMap: "https://maps.app.goo.gl/gdddHTQq2S4aK9jSA"
     };
   },
 };

@@ -68,7 +68,7 @@ export default {
   methods: {
     openMap() {
       window.open(
-        "https://goo.gl/maps/hB9KeWNLQFrtHfZD6?coh=178571&entry=tt",
+        'https://maps.app.goo.gl/gdddHTQq2S4aK9jSA',
         "_blank"
       );
     },
