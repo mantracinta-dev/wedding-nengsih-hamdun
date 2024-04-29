@@ -11,9 +11,11 @@
 <script>
 import CardGreeting from '@/components/CardGreeting.vue'
 import FloatingButton from '@/components/FloatingButton.vue'
+import mixin from '../src/mixins/index'
 
 export default {
   name: 'App',
+  mixins: [mixin],
   components: {
     CardGreeting,
     FloatingButton
@@ -33,7 +35,7 @@ export default {
 
   created() {
     const check = sessionStorage.getItem('guest')
-    this.audio.file = new Audio(require('/public/minang-tari-pasambahan.mp3'))
+    this.audio.file = new Audio(this.mySong)
 
     if (check) {
       this.guest = check

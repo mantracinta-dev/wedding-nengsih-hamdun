@@ -1,8 +1,9 @@
 export default {
   data() {
     return {
+      mySong: require('../../public/voyageur-firestone.mp4'),
       man: "Hamdun",
-      manFullName: "Hamdun",
+      manFullName: "M. Nuril Hamdun",
       manFamily: "Bai Rohimah & Enas Rudin (alm)",
       women: "Putri",
       womenFullName: "Putri Nengsih",
@@ -32,7 +33,7 @@ export default {
         },
         {
           img: require("../assets/img/bank-bsi.png"),
-          name: "Hamdun",
+          name: "M. Nuril Hamdun",
           norek: 7102583300,
           bank: "BSI",
         },
